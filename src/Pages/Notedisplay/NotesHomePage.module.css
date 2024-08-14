@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  
+  p {
+    font-weight: 500;
+    
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+  }
+  .bottomText {
+    font-size: 1rem;
+  }
+  .frontLogo{
+    height: 50vh;
+  }
+  .lock{
+    height:2vh;
+   margin-top: 4px;
+  }
+  

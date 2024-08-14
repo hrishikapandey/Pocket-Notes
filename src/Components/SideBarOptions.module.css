@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content:flex-start;
+    align-items: center;
+    width: 100%;
+    min-height: 5vh;
+    padding: 1%;
+}
+.circle{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 100%;
+    width:  7vh;
+    height: 7vh;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    margin-right: 1vw;
+    box-shadow: 0 0 1vh  rgba(0, 0, 0, 0.2),  0 0 2vh rgba(0, 0, 0, 0.19);
+}
+
+.groupName{
+    font-size: 4vh;
+    font-weight: 500;
+}

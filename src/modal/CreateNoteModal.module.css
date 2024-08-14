@@ -1,0 +1,106 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 50vw;
+    height: fit-content;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+    display: flex;
+    padding: 2vw;
+    flex-direction: column;
+    z-index: 100;
+    border-radius: 5px;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: all 0.3s;
+  }
+  .modal form {
+    display: flex;
+    flex-direction: column;
+  }
+  .heading {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-top: 0;
+  }
+  .modal label {
+    font-weight: 500;
+    font-size: 1.6rem;
+  }
+  .groupname{
+    display: flex;
+    flex-flow: row;
+  }
+  .groupname label {
+    margin-right: 2rem;
+  }
+  .groupname input {
+    padding: 0.6rem 1.2rem;
+    width: 70%;
+    border-radius: 1rem;
+    border: 1px solid #cccccc;
+  }
+  .color {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .color ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  
+  .btn {
+    background-color:#001F8B;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 0.5rem 0;
+    border-radius: 1rem;
+    width: 20%;
+    align-self: flex-end;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 600px) {
+    .modal {
+      width: 80%;
+      gap: 1.5rem;
+    }
+    .modal form {
+      gap: 1.5rem;
+    }
+    .modal label {
+      font-size: 1.4rem;
+    }
+    .groupname label {
+      margin-right: 1rem;
+    }
+    .groupname input {
+      width: 65%;
+      font-size: 1.5rem;
+    }
+    .groupname input::placeholder {
+      font-size: 1.2rem;
+    }
+    .color {
+      gap: 0.5rem;
+    }
+    .color ul {
+      gap: 0.5rem;
+    }
+    .btn {
+      align-self: center;
+      width: 40%;
+    }
+  }
+  
