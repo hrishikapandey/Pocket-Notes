@@ -26,4 +26,27 @@
     height:2vh;
    margin-top: 4px;
   }
+  @media only screen and (max-width: 600px) {
+    .container {
+      padding: 0.5rem; /* Less padding on smaller screens */
+    }
+  
+    .bottom {
+      bottom: 0.5rem; /* Adjust position for mobile */
+      gap: 0.5rem; /* Reduce gap between items */
+    }
+  
+    .bottomText {
+      font-size: 0.9rem; /* Slightly smaller font size for mobile */
+    }
+  
+    .frontLogo {
+      max-height: 40vh; /* Reduce max height for mobile */
+    }
+  
+    .lock {
+      height: 1.5vh; /* Adjust size for mobile */
+      margin-top: 2px; /* Adjust spacing for mobile */
+    }
+  }
   

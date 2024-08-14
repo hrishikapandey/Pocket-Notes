@@ -26,3 +26,16 @@
     font-size: 4vh;
     font-weight: 500;
 }
+@media only screen and (max-width: 600px) {
+    .circle {
+      width: 5vh; 
+      height: 5vh; 
+      font-size: 0.8rem; 
+      margin-right: 0.5vw;
+    }
+  
+    .groupName {
+      font-size: 3vh; /* Smaller font size */
+    }
+  }
+  
