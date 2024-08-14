@@ -1,20 +1,41 @@
 .color-circle {
-    height: 4vh;
-    width:  4vh;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  .color-circle:hover {
-    cursor: pointer;
-    transform: scale(1.2);
-  }
-  .selected {
-    outline: 1px solid black;
-  }
-  @media only screen and (max-width: 600px) {
-    .color-circle {
+  height: 4vh;
+  width: 4vh;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.color-circle:hover {
+  transform: scale(1.2);
+}
+
+.selected {
+  outline: 1px solid black;
+}
+
+@media only screen and (max-width: 600px) {
+  .color-circle {
       height: 3vh;
-      width:  3vh;
-    }
+      width: 3vh;
   }
-  
+
+  .color-circle:hover {
+      transform: scale(1.1);
+  }
+
+  .selected {
+      outline: 2px solid black; /* Make the outline thicker for better visibility on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .color-circle {
+      height: 2.5vh;
+      width: 2.5vh;
+  }
+
+  .color-circle:hover {
+      transform: scale(1.05);
+  }
+}
