@@ -53,18 +53,18 @@
 
     .form {
         width: 90vw;
-        margin-left: 5vw; /* Center form for smaller screens */
+        margin-left: 5vw; 
     }
 
     .textarea {
         width: 70vw;
         height: 20vh;
-        font-size: 0.9rem; /* Slightly smaller font for smaller screens */
+        font-size: 0.9rem; 
     }
 
     img {
         height: 2.5vh;
-        margin-left: -40px; /* Adjust positioning for smaller screens */
+        margin-left: -40px; 
         margin-top: 80px;
     }
 }
