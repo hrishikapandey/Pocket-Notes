@@ -83,7 +83,7 @@
     .textarea {
         width: 65vw;
         height: 18vh;
-        font-size: 0.8rem; /* Further reduce font size for very small screens */
+        font-size: 0.8rem; 
         padding: 0.5vh;
     }
 

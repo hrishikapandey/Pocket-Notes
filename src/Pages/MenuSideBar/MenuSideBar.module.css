@@ -1,62 +1,76 @@
 .container {
-    display: flex;
-    flex-flow: column;
-    text-align: center;
-    justify-content: center;
-    width: 25%;
-  }
-  
-  .heading{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    height: 10vh;
-  }
-  .header {
-    font-size: 2rem;
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+  justify-content: center;
+  width: 25%;
+}
+
+.heading {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 10vh;
+}
+
+.header {
+  font-size: 2rem;
     position: sticky;
     top: 0;
-    
-  }
-  
-  .idList {
-    margin-top: 0;
-    position: relative;
-    top: 0vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    scrollbar-width: none;
-    max-height: 100%;
-  }
-  .additionSymbol {
-    margin: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 4vh;
-    border-radius: 100%;
-    width:  7vh;
-    height: 7vh;
-    background: #16008b;
-    position: sticky;
-    left: 20vw;
-    top: 85%;
-  }
-  .additionSymbol:hover {
-    cursor: pointer;
-  }
-  ul:hover {
-    cursor: pointer;
-    background-color: #f2efe5;
-  }
-  @media only screen and (max-width: 600px) {
-    .container {
+    background-color: #fff; 
+    z-index: 10; 
+    padding: 1rem 0; 
+    width: 100%; 
+}
+
+.idList {
+  margin-top: 0;
+  position: relative;
+  top: 0vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scrollbar-width: none;
+  max-height: 100%;
+}
+
+.additionSymbol {
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4vh;
+  border-radius: 100%;
+  width: 7vh;
+  height: 7vh;
+  background: #16008b;
+  position: sticky;
+  right: 0; 
+  top: 85%;
+  margin-left: 30vh;
+}
+
+.additionSymbol:hover {
+  cursor: pointer;
+}
+
+ul:hover {
+  cursor: pointer;
+  background-color: #f2efe5;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
       width: 100vw;
-    }
   }
-  .none {
-    display: none;
+
+  .additionSymbol {
+      right: 5vw; 
+      margin-left: 45vh;
   }
-  
+}
+
+.none {
+  display: none;
+}
